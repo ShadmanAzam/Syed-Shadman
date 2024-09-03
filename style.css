@@ -1,178 +1,194 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html , body
+{
     width: 100%;
     height: 100%;
 }
 #main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  background-color: grey;
-}
-#left {
-    position: relative;
-    width: 45%;
-    height: 100%;
-    
-}
-#scroll {
-    display: flex;
-    justify-content: space-between;
-  position: absolute;
-  bottom: -5%;
-  left: 12%;
-  transform-origin: 0% 50%;
-  transform: rotate(-90deg);
-
-}
-#scroll  #line{
-    width: 170px;
-    height: 2px;
-    background-color: white;
-align-self: center;
-}
-#scroll h2 {
-    font-size: 15px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 3px;
-}
-
-#image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 270px;
-    height: 370px;
-   background-size: cover;
-   background-position: center; 
-   background-image: url(https://images.unsplash.com/photo-1637147396170-01b7737d51a0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-}
-#nav {
-    padding: 50px;
-    display: flex;
-    gap: 50px;
-    color: #fff;
-}
-#nav h3 {
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 2px;
-}
-#nav a{
-    font-size: 9px;
-margin-top: 3px;
-color: white;
-}
-#central {
-position: relative;
-    display: flex;
-    width: 45%;
-    height: 100%;
-    
-    
-}
-
-#central #phto {
-    position: absolute;
-    
-}
-#central #ctext {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-    z-index: 999;
-}
-
-
-#cimage{
-    display: flex;
-    position:absolute;
-    bottom: 10%;
-    left: 70%;
-    width: 230px;
-    height: 130px;
-    background-color: red;
-}
-
-#cicon {
-
-    width: 20%;
-    height: 100%;
-    background-color: #fff;
-    
-}
-
-
-
-
-#cphto {
-    width: 80%;
-    height: 100%;
-    background-image: url(https://images.unsplash.com/photo-1476836349418-180f91b52141?q=80&w=2252&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-background-size: cover;
-background-position: center;
-}
-
-
-#ctext h1{
-    user-select: none;
-    font-size: 60px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 2px;
-    z-index: 999;
-    white-space: nowrap;
-
-}
-#ctext h3 {
-    font-size: 35px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 2px;
-    z-index: 999;
-
-}
-#phto {
+  display: flex;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
-    background-image: url(https://images.unsplash.com/photo-1634157013320-80b6f133a9e8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
-#right {
-    position: relative;
-    width: 10%;
+#left {
+    padding: 5px 80px;
+    width: 30%;
     height: 100%;
-  
+    background-color: rgba(0, 0, 0, 0.385);
+    
 }
-#rtext {
-   gap: 50px;
-  display: flex;
-  position: absolute;
-  top: 30%;
-  right: -80%;
-   transform-origin: 0% ,50%;
-   transform: rotate(-90deg); 
-}
-#rtext a {
-    font-family: 'Courier New', Courier, monospace;
-    justify-content: space-between;
+#hed h1 {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+    font-weight: 300;
+
+}
+#hed p {
+    color: white;
+    opacity: .2;
+
+}
+#hed #line {
+
+    width: 80px;
+    height: 2px;
+    background-color: white;
 }
 
-#ricon {
-    color: #fff;
-position: absolute;
- top: 5%;
- left: 45%;
+#bottom {
+    padding: 100px  0%;
+    color: white;
+
 }
+
+#bottom #line {
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+ol {
+    font-family: 'Courier New', Courier, monospace;
+}
+#b1 {
+opacity: .5;
+margin-bottom: 30px;
+}
+#b1 #line {
+    width: 150px;
+}
+#b1  p{
+    font-size: 10px;
+    margin-top: 5px;
+}
+#b2 {
+    width: 600px;
+    margin-bottom: 30px;
+    font: 20px;
+    opacity: .5;
+   
+   
+    }
+    #b2 #line {
+        width: 250px;
+    }
+    #b2 p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    #b3 {
+        width: 600px;
+        margin-bottom: 30px;
+        }
+        #b3 h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        #b3 #line {
+            width: 420px;
+            opacity: .5;
+        }
+        #b3 p {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        #b4 {
+            opacity: .5;
+            margin-bottom: 30px;
+            width: 600px;
+            }
+            #b4 #line {
+                width: 240px;
+
+            }
+            #b4 h3 {
+                font-size: 15px;
+            }
+            #b4 p{
+                margin-top: 5px;
+                font-size: 10px;
+            }
+         
+            
+            #l {
+                position: absolute;
+               left: 8%;
+              bottom: 0 ;
+                transform: rotate(270deg);
+                width: 150px;
+                height: 2px;
+                background-color: white;
+            }
+            #scroll h4 {
+          margin-top: 170px;
+          opacity: .5;
+            }
+#right {
+    position: relative;
+  display: flex;
+   width: 70%;
+    height: 100%;
+}
+#nav {
+    width: 100%;
+    height: 100%;
+
+}
+#text {
+margin-left: 50%;
+margin-top: 10px;
+
+}
+
+#text a {
+
+  margin-left: 20px;
+  color: white;
+  letter-spacing: 1px;
+
+}
+#ctext  {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    color: white;
+    width: 250px;
+    height: 200px;
+    
+}
+#ctext h4 {
+    font-size: 20px;
+    margin-bottom: 2px
+
+}
+#ctext h1 {
+  font-size: 100px;
+  margin-left: 50px;
+}
+#cetxt #icon {
+    
+}
+#icon {
+    display: flex;
+}
+#ctext #l2 {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+position: absolute;
+bottom: 18%;
+left: 6%;
+}
+#stext  input{
+    font-size: 13px;
+    background-color: transparent;
+    color: white;
+}
+
